@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  
+  <h1>1. Co to są pseudoklasyk?</h1>
+  CSS przewiduje kilka <u>ściśle określonych klas</u> pozwalających na formatowanie niektórych<br>
+  elementów dokumentu są to <b>Pseudoklasy.</b><br>
+  <br>
+  <h1>2. Uwaga dotycząca <b>dwukropka:</b></h1>
+  Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy<br>
+  selektorem a nazwą klasy.<br>
+  <br>
+  <h1>3. Tabela opisu pseudoklas</h1>
+  <table border>
+   <tr>
+      <td><b>A:link,</b></td> <td>odpowiada za wygląd hiperłącza, jeżeli nie zostało ono<br>jeszcze odwiedzone.</td>
+   </tr>
+   <tr>
+      <td><b>A:visited,</b></td> <td>odpowiada za formatowanie hiperłącza już odwiedzonego.</td>
+   </tr>
+   <tr>
+      <td><b>A:hover,</b></td> <td>zmiany pewnych elementów po najechaniu na nie urządzeniem<br>wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor<br>lub element blokowy DIV.</td>
+   </tr>
+   <tr>
+      <td><b>A:active,</b></td> <td>pozwala nadać dowolne formatowanie elementowi po nakierowaniu na<br>niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego<br>zwolnieniem (odsyłacz aktywnykliknięty).</td>
+   </tr>
+   <tr>
+      <td><b>A:focus,</b></td> <td>jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był<br>formatowany innym kolorem. Odsyłacz posiadający tzw fokus-zaznaczony<br>przy poruszaniu się po dokumencie przy pomocy klawisza tabulacji:<br>naciśnięcie w tym momencie klawisza ENTER spowoduje taką reakcję<br>przeglądarki, jakby dany odsyłacz został kliknięty.</td>
+   </tr>
+   <tr>
+      <td><b>:lang</b></td> <td>formatowanie wielojęzykowych dokumentów.</td>
+   </tr>
+   <tr>
+      <td><b>:first-child</b></td> <td>umożliwia określenie formatowania dla pierwszego dziecka wybranego<br>elementu.</td>
+   </tr>
+   </table>
+   <br>
+   <h1>4. Zastosowanie pseudoklasy :active</h1>
+   1)można używać jako uzupełnienia definicji odnośników<br>
+   2)jako elementu poprawiającego czytelność formularzy.<br>
+   <br>
+   <h1>5. Przykłady kodów definiowania pseudoklas</h1>
+   <b>Przykład 1</b><br>
+   <u>Temat:</u> Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem A.<br>Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu<br>taki odnośnik będzie miał kolor zielony.<br>
+   A:link<br>
+   {<br>
+   color:red;<br>
+   }<br>
+   A:visited<br>
+   {<br>
+   color:green;<br>
+   }<br>
+   <br>
+   <b>Przykład 2</b><br>
+   <u>Temat:</u> Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.<br>
+   <br>
+   A /* Definicja odsyłacza podstawowego*/<br>
+   {<br>
+   font-size:12pt;<br>
+   text-decoration:none;<br>
+   }<br>
+   A:link<br>
+   {<br>
+   color:navy;<br>
+   }<br>
+   A:visited<br>
+   {<br>
+   color:green;<br>
+   }<br>
+   A:hover<br>
+   {<br>
+   color:red;<br>
+   text-decoration:underline;<br>
+   }<br>
+   <br>
+   <b>Przykład</b><br>
+   <u>Temat:</u> Zastosowanie :focus<br>
+   A:focus<br>
+   {<br>
+   color:braun;<br>
+   }<br>
+  </body>
+</html>

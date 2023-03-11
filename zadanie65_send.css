@@ -1,0 +1,49 @@
+p:first-child
+{
+font-size:9mm;
+font-style:italic;
+}
+div#pierwszy_sender
+{
+width:788pt;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(144,238,144);
+border-radius: 14px;
+border:black solid 3px;
+}
+p#pierwszy_send
+{
+font-size:10pt;
+}
+
+div#drugi_sender
+{
+width:988pt;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(173,216,230);
+border-radius: 13px;
+border:navy solid 5px;
+}
+p#drugi_giacomo
+{
+font-size:10pt;
+}
+
+div#trzeci_sender
+{
+width:1188pt;
+background-color:rgb(255,182,193);
+border-radius: 8px;
+border:purple solid 7px;
+}
+p#trzeci_3F
+{
+ font-size:10pt;
+}
+p:first-line
+{
+font-size:15pt;
+font-weight:bold;
+}
